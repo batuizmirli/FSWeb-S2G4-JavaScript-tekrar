@@ -1,0 +1,210 @@
+:root {
+  --red: #CE2829;
+  --yellow: #FDC913;
+  --dark: #292929;
+  --beige: #FAF7F2;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Barlow', sans-serif; background: var(--beige); color: var(--dark); }
+.inner-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* 1. ANA BANNER (HERO) BÖLÜMÜ */
+.hero-section {
+  background-image: url('/assets/iteration-1/home-banner.png'); /* */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--red);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Yazıların okunması için */
+}
+
+.main-content { display: flex; flex-direction: column; align-items: center; }
+.main-logo { width: 350px; margin-bottom: 60px; }
+.hero-mobile-title { display: none; font-family: 'Quattrocento', serif; font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 30px; text-align: center; }
+.hero-italic { font-family: 'Satisfy', cursive; color: var(--yellow); font-size: 2.2rem; }
+.hero-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 5.5rem;
+  line-height: 1;
+  margin: 20px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.yellow-btn { background: var(--yellow); border: none; padding: 15px 50px; border-radius: 30px; font-weight: 700; cursor: pointer; font-size: 1rem; }
+
+/* 2. KATEGORİ NAVİGASYON (İKONLAR) */
+.category-nav { background: #fff; padding: 25px 0; border-bottom: 1px solid #f0f0f0; }
+.cat-row { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.cat-item { display: flex; align-items: center; gap: 10px; color: #5F5F5F; font-weight: 600; text-decoration: none; cursor: pointer; }
+.cat-item img { width: 32px; height: 32px; }
+.cat-emoji { font-size: 1.6rem; }
+.cat-item.active { color: var(--dark); background: var(--dark); color: #fff; padding: 10px 20px; border-radius: 30px; }
+
+/* Footer FontAwesome ikonları */
+.footer-col-brand i { color: var(--yellow); margin-right: 8px; }
+.footer-col-brand p { margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+
+/* Menü tab emoji */
+.tab-emoji { font-size: 1.2rem; }
+
+/* 3. PROMO KARTLAR (ÖZEL LEZZETUS VE DİĞERLERİ) */
+.promo-grid-section { padding: 80px 0; }
+.promo-flex-box { display: flex; gap: 20px; }
+.promo-card {
+  border-radius: 12px;
+  padding: 40px;
+  color: #fff;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Sol Büyük Kart: Özel Lezzetus */
+.big-red {
+  flex: 1.2;
+  background-color: #D52B2C;
+  background-image: url("/assets/iteration-2/cta/kart-1.png"); /* */
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.big-red h2 { font-family: 'Quattrocento', serif; font-size: 4.5rem; line-height: 1; margin-bottom: 10px; }
+
+.promo-right-column { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+
+/* Sağ Üst Kart: Hackathlon Burger */
+.dark-burger {
+  flex: 1;
+  background-color: var(--dark);
+  background-image: url("/assets/iteration-2/cta/kart-2.png"); /* */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sağ Alt Kart: Kurye (NPM) */
+.fast-npm {
+  flex: 1;
+  background-color: var(--yellow);
+  color: var(--red);
+  background-image: url("/assets/iteration-2/cta/kart-3.png"); /* */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order-white-btn { background: #fff; color: var(--red); border: none; padding: 12px 25px; border-radius: 30px; font-weight: 700; margin-top: 20px; cursor: pointer; }
+
+/* 4. MENÜ VE YEMEK LİSTESİ */
+.menu-display { text-align: center; padding-bottom: 100px; }
+.menu-cursive { font-family: 'Satisfy', cursive; color: var(--red); font-size: 1.8rem; }
+.menu-heading { font-family: 'Quattrocento', serif; font-size: 2.8rem; margin: 15px 0 40px; }
+.menu-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 50px; flex-wrap: wrap; }
+.menu-tabs button { padding: 12px 28px; border-radius: 30px; border: none; background: #fff; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.menu-tabs button.active { background: var(--dark); color: #fff; }
+
+.food-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.food-item { background: #fff; padding: 30px; border-radius: 15px; text-align: left; }
+.food-item img { width: 100%; display: block; margin-bottom: 20px; }
+.food-item h4 { font-family: 'Roboto Condensed', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
+.food-details { display: flex; justify-content: space-between; align-items: center; }
+.food-details span { font-size: 0.9rem; color: #5F5F5F; }
+.food-details strong { font-size: 1.1rem; font-weight: 700; color: var(--dark); }
+
+/* 5. FOOTER VE INSTAGRAM */
+.site-footer { background: #1A1A1A; color: #fff; padding: 60px 0 0; }
+.footer-layout { display: flex; justify-content: space-between; gap: 60px; }
+.footer-brand-title { font-family: 'Quattrocento', serif; font-size: 1.8rem; font-weight: 700; line-height: 1.2; margin-bottom: 30px; }
+.footer-contact p { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; font-size: 0.9rem; color: #d0d0d0; line-height: 1.5; }
+.footer-contact i { font-size: 1rem; margin-top: 3px; }
+.contact-indent { padding-left: 0; }
+.footer-col-menu h4,
+.footer-col-insta h4 { font-family: 'Roboto Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; }
+.footer-menu-list { list-style: none; padding: 0; margin: 0; }
+.footer-menu-list li { font-size: 0.9rem; color: #d0d0d0; margin-bottom: 12px; }
+.insta-grid-footer { display: grid; grid-template-columns: repeat(3, 106px); gap: 12px; }
+.insta-grid-footer img { width: 106px; height: 106px; object-fit: cover; border-radius: 3px; display: block; }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #333; margin-top: 50px; padding: 25px 0; }
+.footer-bottom p { font-size: 0.85rem; color: #d0d0d0; }
+.footer-twitter { color: #fff; font-size: 1.2rem; text-decoration: none; }
+.footer-twitter:hover { color: var(--yellow); }
+
+/* RESPONSIVE - MOBİL (Figma: mobil pizza) */
+@media (max-width: 768px) {
+
+  /* Hero - Tam ekran kırmızı banner, logo yerine yazı */
+  .hero-section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .main-logo { display: none; }
+  .hero-mobile-title { display: block; }
+  .hero-italic { display: none; }
+  .hero-title { font-size: 2.6rem; }
+  .yellow-btn { padding: 12px 40px; }
+
+  /* Kategori Nav - 2 sütunlu grid */
+  .cat-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    justify-items: start;
+    padding: 0 20px;
+  }
+  .cat-item { font-size: 0.9rem; }
+  .cat-emoji { font-size: 1.3rem; }
+  .cat-item.active { padding: 8px 16px; }
+
+  /* Promo Kartlar - hepsi alt alta, full genişlik */
+  .promo-grid-section { padding: 40px 0; }
+  .promo-flex-box { flex-direction: column; gap: 16px; }
+  .promo-card { min-height: 200px; padding: 30px; border-radius: 10px; }
+  .big-red { min-height: 280px; }
+  .big-red h2 { font-size: 2.8rem; }
+  .promo-right-column { gap: 16px; }
+
+  /* Menü bölümü */
+  .menu-display { padding-bottom: 60px; }
+  .menu-cursive { font-size: 1.4rem; }
+  .menu-heading { font-size: 1.8rem; margin: 10px 0 30px; }
+
+  /* Menü tablar - 2 sütunlu grid */
+  .menu-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .menu-tabs button { justify-content: center; padding: 10px 16px; font-size: 0.85rem; }
+
+  /* Yemek kartları - tek sütun */
+  .food-grid { grid-template-columns: 1fr; gap: 20px; }
+  .food-item { padding: 24px; }
+
+  /* Footer - tek sütun alt alta */
+  .footer-layout { flex-direction: column; gap: 30px; }
+  .footer-brand-title { font-size: 1.6rem; margin-bottom: 20px; }
+  .footer-contact p { font-size: 0.85rem; }
+  .footer-col-menu h4,
+  .footer-col-insta h4 { font-size: 1.1rem; margin-bottom: 16px; }
+  .footer-menu-list li { margin-bottom: 10px; font-size: 0.85rem; }
+
+  /* Instagram grid - 3 sütun, responsive */
+  .insta-grid-footer { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .insta-grid-footer img { width: 100%; height: auto; aspect-ratio: 1; }
+
+  /* Footer alt kısım */
+  .footer-bottom { margin-top: 30px; padding: 20px 0; }
+}
+
