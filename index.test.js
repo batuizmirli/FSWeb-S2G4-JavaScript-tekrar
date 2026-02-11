@@ -48,19 +48,19 @@ describe('saFunction', ()=>{
         expect(functions.sa()).toBe('as');
     })
 });
-//görev 1
+
 describe('CemberinCevresi görevi', ()=>{
     it('CemberinCevresi bir sayı döndürüyor', ()=>{
 	expect(functions.CemberinCevresi(10)).toEqual(62.8318);
     })
 });
-//görev 2
+
 describe('CemberinAlani görevi', ()=>{
     it('CemberinAlani bir sayı döndürüyor', ()=>{
 	expect(functions.CemberinAlani(4,3.14159)).toEqual(50.26544);
     })
 });
-//görev 3
+
 describe('sayilar görevi', ()=>{
     it('enbuyuk bir sayı döndürüyor', ()=>{
 	expect(functions.enbuyuk).toEqual(992.1);
